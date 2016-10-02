@@ -19,11 +19,11 @@ char	*ft_strcat(char *s1, const char *s2)
 	str = s1;
 	if (*s1)
 		while (*s1)
-			*++s1;
+			++s1;
 	while ((*s1 = *s2))
 	{
-		*s1++;
-		*s2++;
+		s1++;
+		s2++;
 	}
 	return (str);
 }
