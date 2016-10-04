@@ -17,9 +17,9 @@ char	*ft_itoa(int n)
 	char	*str;
 	long	num;
 	int		neg;
-	int		i;
+	int 	i;
 
-	num = (long)n;
+	num = n;
 	neg = 1;
 	i = 0;
 	if (num < 0)
@@ -33,8 +33,9 @@ char	*ft_itoa(int n)
 		str[i] = '0';
 	while (num > 0)
 	{
-		str[i++] = (char)((num % 10) + '0');
+		str[i] = (char)((num % 10) + '0');
 		num = num / 10;
+		i++;
 	}
 	if (neg < 0)
 		str[i] = '-';

@@ -19,7 +19,7 @@ char	*ft_strstr(const char *big, const char *little)
 
 	b = big;
 	if (big == little)
-		return ((char *)big);
+		return ((char *) big);
 	while (*big)
 	{
 		l = little;
@@ -29,7 +29,7 @@ char	*ft_strstr(const char *big, const char *little)
 			++l;
 		}
 		if (*l == '\0')
-			return ((char *)big);
+			return ((char *) big);
 		++big;
 		b = big;
 	}
