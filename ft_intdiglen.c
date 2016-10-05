@@ -14,7 +14,7 @@
 
 int		ft_intdiglen(int n)
 {
-	int		len;
+	int	len;
 
 	len = 0;
 	if (n < 0)

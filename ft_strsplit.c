@@ -12,7 +12,7 @@
 
 #include "libft.h"
 
-static char	*word_builder(char const *str, char c, unsigned int *index)
+static char		*word_builder(char const *str, char c, unsigned int *index)
 {
 	unsigned	i;
 	unsigned	start;
@@ -39,7 +39,7 @@ static char	*word_builder(char const *str, char c, unsigned int *index)
 	return (word);
 }
 
-char		**ft_strsplit(char const *s, char c)
+char			**ft_strsplit(char const *s, char c)
 {
 	unsigned	i;
 	unsigned	j;
