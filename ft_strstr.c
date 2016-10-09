@@ -12,17 +12,17 @@
 
 #include "libft.h"
 
-char	*ft_strstr(const char *big, const char *little)
+char	*ft_strstr(const char *big, const char *lil)
 {
 	const char *b;
 	const char *l;
 
 	b = big;
-	if (big == little)
+	if (big == lil)
 		return ((char *)big);
 	while (*big)
 	{
-		l = little;
+		l = lil;
 		while (*l != '\0' && (*b == *l))
 		{
 			++b;
